@@ -1,0 +1,106 @@
+
+body{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+.hexagonal {
+    position: relative;
+    width: 80px;
+    height: 65px;
+    background-color: #343a40;
+}
+.hexagonal:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+.hexagonal:after {
+    top: 100%;
+    width: 0;
+    border-top: 30px solid #343a40;
+}
+#nav-img{
+    transition: width 2s, height 2s, transform 2s;
+}
+#nav-img:hover{
+    transform: rotate(180deg);
+}
+
+.hexa img{
+    transition: width 2s, height 2s, transform 2s;
+}
+.hexa img:hover{
+    transform: scale(2.0);
+}
+
+#card-img{
+    transition: width 2s, height 2s, transform 2s;
+}
+#card-img:hover{
+    transform: rotateX(180deg);
+}
+
+
+.hexa, .hexa div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+.hexa {
+    width: 300px;
+    height: 230px;
+    margin-left: -20px;
+}
+.hexa div {
+    width: 100%;
+    height: 100%;
+}
+.hexa {
+    transform: rotate(120deg);
+}
+.hex1 {
+    transform: rotate(-60deg);
+}
+.hex2 {
+    transform: rotate(-60deg);
+}
+.hexa img {
+    position: relative;
+}
+
+#card-btn{
+    background-color:#2eb398 ;
+}
+.fa:hover{
+    text-decoration:none;
+    color: black;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .hexagonal{
+      margin-bottom: 50px;
+  }
+}
