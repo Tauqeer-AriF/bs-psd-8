@@ -53,13 +53,15 @@ body{
     transform: scale(2.0);
 }
 
-#card-img{
+#card-img,#card-btn{
     transition: width 2s, height 2s, transform 2s;
 }
 #card-img:hover{
     transform: rotateX(180deg);
 }
-
+#card-btn:hover{
+    transform: rotateY(180deg);
+}
 
 .hexa, .hexa div {
     margin: 0 auto;
@@ -93,11 +95,14 @@ body{
 #card-btn{
     background-color:#2eb398 ;
 }
-.fa:hover{
+#fb{
     text-decoration:none;
-    color: black;
+    color: white;
 }
-
+#fb:hover{
+    background-color: white;
+    color: #2eb398;
+}
 
 @media only screen and (max-width: 768px) {
   .hexagonal{
